@@ -20,7 +20,7 @@ async function fetchData() {
     let windGust = document.getElementById('windgust');
     let time = document.getElementById('time');
     let icon = document.getElementById('icon');
-    let def = "bhusawal";
+    let def = "Jabalpur";
     let cloud = document.querySelector('.fa-solid');
 
     await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname || def}&appid=37941ef580eff211a7045e9c1d28414d`).then(res => res.json()).then(d => {
